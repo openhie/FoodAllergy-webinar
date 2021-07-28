@@ -12,7 +12,7 @@
   <title value="Food Allergies ImplementationGuide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-28T13:32:56+00:00"/>
+  <date value="2021-07-28T13:49:01+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -216,6 +216,26 @@
       </reference>
       <name value="Food Allergy Logical Model"/>
       <description value="Food Allergy information model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FoodAllergyVS"/>
+      </reference>
+      <name value="Food Allergies"/>
+      <description value="Main Food allergies."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FoodAllergy"/>
+      </reference>
+      <name value="Food Allergy"/>
+      <description value="Food Allergy profile"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

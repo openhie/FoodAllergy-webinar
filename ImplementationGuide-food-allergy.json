@@ -11,7 +11,7 @@
   "title": "Food Allergies ImplementationGuide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-28T13:32:56+00:00",
+  "date": "2021-07-28T13:49:01+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -341,6 +341,32 @@
         },
         "name": "Food Allergy Logical Model",
         "description": "Food Allergy information model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/FoodAllergyVS"
+        },
+        "name": "Food Allergies",
+        "description": "Main Food allergies."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergy"
+        },
+        "name": "Food Allergy",
+        "description": "Food Allergy profile"
       }
     ],
     "page": {
