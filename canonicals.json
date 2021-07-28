@@ -5,5 +5,12 @@
     "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy",
     "version": "0.1.0-test",
     "name": "FoodAllergyIG"
+  },
+  {
+    "id": "FoodAllergyModel",
+    "type": "StructureDefinition",
+    "url": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergyModel",
+    "version": "0.1.0-test",
+    "name": "FoodAllergyModel"
   }
 ]
