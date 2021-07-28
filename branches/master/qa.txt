@@ -1,13 +1,14 @@
-﻿XXYourComputableMyIGNameHere : Validation Results
+﻿FoodAllergyIG : Validation Results
 =========================================
 
-err = 1, warn = 0, info = 0
+err = 1, warn = 1, info = 0
 IG Publisher Version: 1.1.77
-Generated Wed Jul 28 13:12:03 UTC 2021. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+Generated Wed Jul 28 13:23:16 UTC 2021. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
 
- Build Errors : 0 / 0 / 0
- /github/workspace/input/myig : 1 / 0 / 1
+ Build Errors : 0 / 1 / 0
+ /github/workspace/input/food-allergy : 1 / 0 / 1
 </table>
 == n/a ==
-== /github/workspace/input/myig.xml ==
-ERROR: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ohie.fhir.food-allergy
+== /github/workspace/input/food-allergy.xml ==
+ERROR: ImplementationGuide/food-allergy: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
