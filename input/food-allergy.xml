@@ -51,6 +51,11 @@
         <title value="MyIG Home Page"/>
         <generation value="html"/>
       </page>
+      <page>
+        <nameUrl value="intro.html"/>
+        <title value="Food Allergy - Introduction"/>
+        <generation value="markdown"/>
+      </page>
     <!-- change history page -->
       <page>
         <nameUrl value="changes.html"/>
