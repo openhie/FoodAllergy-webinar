@@ -3,7 +3,7 @@
   "name": "FoodAllergyIG",
   "package-id": "ohie.fhir.food-allergy",
   "ig-ver": "0.1.0-test",
-  "date": "Wed, 28 Jul, 2021 13:49:01 +0000",
+  "date": "Wed, 28 Jul, 2021 13:51:03 +0000",
   "errs": 1,
   "warnings": 3,
   "hints": 0,

@@ -3,18 +3,20 @@
 
 err = 1, warn = 3, info = 0
 IG Publisher Version: 1.1.77
-Generated Wed Jul 28 13:49:13 UTC 2021. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
+Generated Wed Jul 28 13:51:16 UTC 2021. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
 
- Build Errors : 0 / 1 / 0
- /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 1 / 1
+ Build Errors : 0 / 2 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS : 0 / 0 / 1
  /github/workspace/input/food-allergy : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ohie.fhir.food-allergy
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy.json ==
-WARNING: StructureDefinition.where(url = 'http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
 ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/FoodAllergyModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential

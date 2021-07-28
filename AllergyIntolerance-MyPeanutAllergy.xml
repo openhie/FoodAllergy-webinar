@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="MyPeanutAllergy"/>
+  <meta>
+    <profile value="http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}">Unconfirmed</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 91935009}">Allergy to peanut</span></p><p><b>patient</b>: <span>Paul Peters</span></p><p><b>recordedDate</b>: 2021-07-28</p><p><b>recorder</b>: <span>Daniel Davis</span></p><p><b>asserter</b>: <span>Paul Peters</span></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="91935009"/>
+      <display value="Allergy to peanut"/>
+    </coding>
+  </code>
+  <patient>
+    <identifier>
+      <value value="8936584955"/>
+    </identifier>
+    <display value="Paul Peters"/>
+  </patient>
+  <recordedDate value="2021-07-28"/>
+  <recorder>
+    <identifier>
+      <value value="8936584955"/>
+    </identifier>
+    <display value="Daniel Davis"/>
+  </recorder>
+  <asserter>
+    <identifier>
+      <value value="8936584955"/>
+    </identifier>
+    <display value="Paul Peters"/>
+  </asserter>
+</AllergyIntolerance>

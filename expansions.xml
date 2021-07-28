@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5ca4f21e-ffac-436c-a27b-552dc0327ca2"/>
+  <id value="5349152f-7cc0-4e28-8a03-461b7ee14039"/>
   <meta>
-    <lastUpdated value="2021-07-28T13:49:01.722+00:00"/>
+    <lastUpdated value="2021-07-28T13:51:03.123+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -129,7 +129,7 @@
         <name value="FoodAllergyVS"/>
         <title value="Food Allergies"/>
         <status value="active"/>
-        <date value="2021-07-28T13:49:01+00:00"/>
+        <date value="2021-07-28T13:51:03+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -145,8 +145,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c94d0d7d-3799-488f-b24c-980b1358b581"/>
-          <timestamp value="2021-07-28T13:49:09+00:00"/>
+          <identifier value="urn:uuid:df4b830b-5341-4b67-a0e4-71299daca6ea"/>
+          <timestamp value="2021-07-28T13:51:11+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>

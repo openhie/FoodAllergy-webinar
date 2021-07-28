@@ -1,5 +1,3 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FOOD-ALLERGY\ - FHIR v4.0.1</title>
+    <title>FOOD-ALLERGY\Example AllergyIntolerance - MyPeanutAllergy - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"4.4"}
+    h3,h4,h5,h6{--heading-prefix:"4.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -135,7 +133,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example AllergyIntolerance - MyPeanutAllergy</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -147,10 +145,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Food Allergies ImplementationGuide - Local Development build (v0.1.0-test). See the <a href="http://ohie.org/fhir/food-allergy/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Food Allergies ImplementationGuide - Local Development build (v0.1.0-test). See the <a href="http://ohie.org/fhir/food-allergy/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  
 
 
 
@@ -160,27 +157,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-FoodAllergyVS.html">Narrative Content</a>
+    <a href="AllergyIntolerance-MyPeanutAllergy.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-FoodAllergyVS.xml.html">XML</a>
+      <a href="AllergyIntolerance-MyPeanutAllergy.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-FoodAllergyVS.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-FoodAllergyVS.ttl.html">TTL</a>
+      <a href="AllergyIntolerance-MyPeanutAllergy.ttl.html">TTL</a>
     </li>
   
 
@@ -189,14 +186,84 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">: FoodAllergyVS - Change History</h2>
-  <p>History of changes for FoodAllergyVS .</p>
+<a name="root"> </a>
 
+
+<h2 id="root">: Example AllergyIntolerance - MyPeanutAllergy - JSON Representation</h2>
+
+<p><a href="AllergyIntolerance-MyPeanutAllergy.json" no-download="true">Raw json</a> | <a href="AllergyIntolerance-MyPeanutAllergy.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
   
 
-</div>
 
+
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance">resourceType</a>" : "AllergyIntolerance",
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.id">id</a>" : "MyPeanutAllergy",
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\&quot;&gt;Active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\&quot;&gt;Unconfirmed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://snomed.info/sct 91935009}\&quot;&gt;Allergy to peanut&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;span&gt;Paul Peters&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2021-07-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorder&lt;/b&gt;: &lt;span&gt;Daniel Davis&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;asserter&lt;/b&gt;: &lt;span&gt;Paul Peters&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.clinicalStatus">clinicalStatus</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "active"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.verificationStatus">verificationStatus</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "unconfirmed"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "91935009",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Allergy to peanut"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.patient">patient</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "8936584955"
+    },
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Paul Peters"
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.recordedDate">recordedDate</a>" : "2021-07-28",
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.recorder">recorder</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "8936584955"
+    },
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Daniel Davis"
+  },
+  "<a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.asserter">asserter</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "8936584955"
+    },
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Paul Peters"
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -204,29 +271,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
