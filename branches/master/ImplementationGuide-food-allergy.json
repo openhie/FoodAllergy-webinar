@@ -11,7 +11,7 @@
   "title": "Food Allergies ImplementationGuide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-28T13:23:12+00:00",
+  "date": "2021-07-28T13:32:56+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -328,6 +328,21 @@
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergyModel"
+        },
+        "name": "Food Allergy Logical Model",
+        "description": "Food Allergy information model"
+      }
+    ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
@@ -337,6 +352,11 @@
           "nameUrl": "index.html",
           "title": "MyIG Home Page",
           "generation": "html"
+        },
+        {
+          "nameUrl": "intro.html",
+          "title": "Food Allergy - Introduction",
+          "generation": "markdown"
         },
         {
           "nameUrl": "changes.html",

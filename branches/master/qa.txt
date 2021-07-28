@@ -1,14 +1,17 @@
 ﻿FoodAllergyIG : Validation Results
 =========================================
 
-err = 1, warn = 1, info = 0
+err = 1, warn = 2, info = 0
 IG Publisher Version: 1.1.77
-Generated Wed Jul 28 13:23:16 UTC 2021. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
+Generated Wed Jul 28 13:33:02 UTC 2021. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
 
  Build Errors : 0 / 1 / 0
- /github/workspace/input/food-allergy : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 1 / 1 / 1
+ /github/workspace/input/food-allergy : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ohie.fhir.food-allergy
+== /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
+ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/FoodAllergyModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == /github/workspace/input/food-allergy.xml ==
-ERROR: ImplementationGuide/food-allergy: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
