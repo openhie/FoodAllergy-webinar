@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FOOD-ALLERGY\ - FHIR v4.0.1</title>
+    <title>FOOD-ALLERGY\Example AllergyIntolerance - MyPeanutAllergy - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"4.4"}
+    h3,h4,h5,h6{--heading-prefix:"4.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -135,7 +131,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example AllergyIntolerance - MyPeanutAllergy</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -147,9 +143,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Food Allergies ImplementationGuide - Local Development build (v0.1.0-test). See the <a href="http://ohie.org/fhir/food-allergy/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
   
 
 
@@ -159,28 +155,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="ValueSet-FoodAllergyVS.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-FoodAllergyVS.xml.html">XML</a>
+      <a href="AllergyIntolerance-MyPeanutAllergy.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-FoodAllergyVS.json.html">JSON</a>
+      <a href="AllergyIntolerance-MyPeanutAllergy.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-FoodAllergyVS.ttl.html">TTL</a>
+      <a href="AllergyIntolerance-MyPeanutAllergy.ttl.html">TTL</a>
     </li>
   
 
@@ -190,13 +186,25 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">: FoodAllergyVS - Change History</h2>
-  <p>History of changes for FoodAllergyVS .</p>
 
+
+  <h2 id="root">Example AllergyIntolerance: Example AllergyIntolerance - MyPeanutAllergy</h2>
+
+
+
+  <!-- insert intro if present -->
   
 
-</div>
 
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}">Unconfirmed</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 91935009}">Allergy to peanut</span></p><p><b>patient</b>: <span>Paul Peters</span></p><p><b>recordedDate</b>: 2021-07-28</p><p><b>recorder</b>: <span>Daniel Davis</span></p><p><b>asserter</b>: <span>Paul Peters</span></p></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -204,29 +212,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
