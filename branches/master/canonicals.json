@@ -7,10 +7,24 @@
     "name": "FoodAllergyIG"
   },
   {
+    "id": "FoodAllergy",
+    "type": "StructureDefinition",
+    "url": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy",
+    "version": "0.1.0-test",
+    "name": "FoodAllergy"
+  },
+  {
     "id": "FoodAllergyModel",
     "type": "StructureDefinition",
     "url": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergyModel",
     "version": "0.1.0-test",
     "name": "FoodAllergyModel"
+  },
+  {
+    "id": "FoodAllergyVS",
+    "type": "ValueSet",
+    "url": "http://ohie.org/fhir/food-allergy/ValueSet/FoodAllergyVS",
+    "version": "0.1.0-test",
+    "name": "FoodAllergyVS"
   }
 ]
