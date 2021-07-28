@@ -1,5 +1,5 @@
 {
-  "package": "xxexample.fhir.uv.myig",
+  "package": "ohie.fhir.food-allergy",
   "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
