@@ -101,7 +101,7 @@ Usage: #definition
 
 
 * insert Question(,patient,Patient ID,string,false)
-* insert Question(,allergen,Substance that the person is allergic to,choice,false)
+* insert Question(,allergen,Substance that the person is allergic to,open-choice,false)
 * item[=].answerValueSet = Canonical(vs-food-allergy-cont)
 * insert Question(,clinicalStatus,Status of the allergy - active or resolved,choice,false)
 * item[=].answerValueSet = Canonical(vs-food-allergy-clinstatus-cont)
