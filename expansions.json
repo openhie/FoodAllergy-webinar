@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "99a8bdc7-3e19-4097-9519-969815e0cf87",
+  "id" : "8c2f9193-a859-4c09-9e2a-4d9e3c594ef4",
   "meta" : {
-    "lastUpdated" : "2022-01-27T20:42:52.411+00:00"
+    "lastUpdated" : "2022-01-27T20:52:08.377+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "FoodAllergyVS",
       "title" : "Food Allergies",
       "status" : "active",
-      "date" : "2022-01-27T20:42:52+00:00",
+      "date" : "2022-01-27T20:52:08+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2e5529d0-a295-445e-ad87-eb43b15e9c14",
-        "timestamp" : "2022-01-27T20:43:04+00:00",
+        "identifier" : "urn:uuid:9da1b797-ceb5-4f00-8560-dc3af88fddb7",
+        "timestamp" : "2022-01-27T20:52:23+00:00",
         "total" : 11,
         "parameter" : [{
           "name" : "excludeNested",
@@ -122,8 +122,8 @@
       "name" : "FoodAllergyVS",
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:8136ba87-ead9-42b3-8d97-07f9d4633642",
-        "timestamp" : "2022-01-27T20:43:09+00:00",
+        "identifier" : "urn:uuid:c3ace159-6f3b-409b-9e18-d192e9e08a83",
+        "timestamp" : "2022-01-27T20:52:28+00:00",
         "total" : 11,
         "parameter" : [{
           "name" : "excludeNested",
@@ -213,8 +213,8 @@
       "name" : "FoodAllergyVerificationStatusVS",
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:be789ed2-83e0-4752-acb0-f7e61d2c2f82",
-        "timestamp" : "2022-01-27T20:43:09+00:00",
+        "identifier" : "urn:uuid:a63c5751-783f-4200-8bd9-77ace8f7eb11",
+        "timestamp" : "2022-01-27T20:52:28+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -259,8 +259,8 @@
       "name" : "FoodAllergyVS",
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:8635ea3e-349d-4f94-a3f2-277fcbcc66d7",
-        "timestamp" : "2022-01-27T20:43:09+00:00",
+        "identifier" : "urn:uuid:96ff2b5d-2203-4988-80fa-ba44fec7bc04",
+        "timestamp" : "2022-01-27T20:52:28+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
