@@ -110,7 +110,8 @@ Usage: #definition
 * insert Question(,recordedDate,When was it reported,date,false)
 * insert Question(,recorder,Who recorded the allergy,string,false)
 * insert Question(,asserter,Who asserted the allergy,string,false)
-* insert Question(,reactions,Substance that the person is allergic to,group,false)
+* insert Question(,reactions,Reactions,group,false)
+* insert Question(item[=].,substance,Substance that is thought to have triggered the reaction,string,false)
 * insert Question(item[=].,manifestation,Manifestation,string,false)
 //  * certitude 0..1 CodeableConcept "How certain we are that the cause of the reaction was the allergen indicated" "How certain we are that the cause of the reaction was the allergen indicated"
 //  * exposure 0..1 CodeableConcept "The exposure route to the substance" "The exposure route to the substance"
