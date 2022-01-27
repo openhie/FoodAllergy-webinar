@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8c2f9193-a859-4c09-9e2a-4d9e3c594ef4"/>
+  <id value="9f3d1b85-22d1-4b86-9cd0-3c1887126b21"/>
   <meta>
-    <lastUpdated value="2022-01-27T20:52:08.377+00:00"/>
+    <lastUpdated value="2022-01-27T21:05:29.362+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -115,7 +115,7 @@
         <name value="FoodAllergyVS"/>
         <title value="Food Allergies"/>
         <status value="active"/>
-        <date value="2022-01-27T20:52:08+00:00"/>
+        <date value="2022-01-27T21:05:29+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -131,8 +131,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9da1b797-ceb5-4f00-8560-dc3af88fddb7"/>
-          <timestamp value="2022-01-27T20:52:23+00:00"/>
+          <identifier value="urn:uuid:0a43cc88-9a8d-4da0-b3f6-01ebc027e875"/>
+          <timestamp value="2022-01-27T21:05:40+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -314,8 +314,8 @@
         <name value="FoodAllergyVS"/>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:c3ace159-6f3b-409b-9e18-d192e9e08a83"/>
-          <timestamp value="2022-01-27T20:52:28+00:00"/>
+          <identifier value="urn:uuid:45350512-b95f-4686-9f9f-1d13d415875d"/>
+          <timestamp value="2022-01-27T21:05:43+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -438,8 +438,8 @@
         <name value="FoodAllergyVerificationStatusVS"/>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:a63c5751-783f-4200-8bd9-77ace8f7eb11"/>
-          <timestamp value="2022-01-27T20:52:28+00:00"/>
+          <identifier value="urn:uuid:30df7930-36e3-432f-9d6f-ca11c2b92183"/>
+          <timestamp value="2022-01-27T21:05:44+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -517,8 +517,8 @@
         <name value="FoodAllergyVS"/>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:96ff2b5d-2203-4988-80fa-ba44fec7bc04"/>
-          <timestamp value="2022-01-27T20:52:28+00:00"/>
+          <identifier value="urn:uuid:ca0b9afd-d368-4fb3-86a2-75792a1f77b0"/>
+          <timestamp value="2022-01-27T21:05:44+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
