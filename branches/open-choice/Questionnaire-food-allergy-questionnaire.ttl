@@ -1,0 +1,280 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire> a fhir:Questionnaire;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "food-allergy-questionnaire"];
+  fhir:Resource.language [ fhir:value "en"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> FoodAllergyQuestionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A form for self-reported food allergies, including the basic information and contained valuesets</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Display\" class=\"hierarchy\"/> title</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Food Allergy report</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Display\" class=\"hierarchy\"/> instructions</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reporting instructions: Please report any allergy or allergic reaction</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> patient</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient ID</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> allergen</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Substance that the person is allergic to</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-open-choice\">open-choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html\">FoodAllergyVS</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> clinicalStatus</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Status of the allergy - active or resolved</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html\">FoodAllergyVS</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> verificationStatus</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Verification status of the allergy - confirmed or suspected or refuted</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html\">FoodAllergyVerificationStatusVS</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> recordedDate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">When was it reported</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> recorder</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Who recorded the allergy</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> asserter</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Who asserted the allergy</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> reactions</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reactions</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> substance</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Substance that is thought to have triggered the reaction</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> manifestation</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Manifestation</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> note</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Note</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:ValueSet;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "vs-food-allergy-cont" ];
+     fhir:ValueSet.name [ fhir:value "FoodAllergyVS" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "91935009" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to peanut" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "48821000119104" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to tree nut" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "782555009" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to cow’s milk protein" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "213020009" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to egg protein" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "417532002" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to fish" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "300913006" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to shellfish" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "782594005" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to soy protein" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "260167008" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Sesame seed" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "21191000122102" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to mustard" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "712843002" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to celery" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "782575000" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to lupine seed" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "vs-food-allergy-verifstatus-cont" ];
+     fhir:ValueSet.name [ fhir:value "FoodAllergyVerificationStatusVS" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "410605003" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Confirmed present" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "415684004" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspected" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 2;
+     fhir:Resource.id [ fhir:value "vs-food-allergy-clinstatus-cont" ];
+     fhir:ValueSet.name [ fhir:value "FoodAllergyVS" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "723506003" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Resolved" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "55561003" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Active" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:Questionnaire.url [ fhir:value "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire"];
+  fhir:Questionnaire.version [ fhir:value "0.1.0-test"];
+  fhir:Questionnaire.name [ fhir:value "FoodAllergyQuestionnaire"];
+  fhir:Questionnaire.title [ fhir:value "Food Allergy self-report"];
+  fhir:Questionnaire.status [ fhir:value "draft"];
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:Questionnaire.date [ fhir:value "2022-01-27T21:06:26+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.publisher [ fhir:value "OpenHIE"];
+  fhir:Questionnaire.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://ohie.org" ]
+     ]
+  ];
+  fhir:Questionnaire.description [ fhir:value "A form for self-reported food allergies, including the basic information and contained valuesets"];
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:Questionnaire.item [
+     fhir:index 0;
+     fhir:Questionnaire.item.linkId [ fhir:value "title" ];
+     fhir:Questionnaire.item.text [ fhir:value "Food Allergy report" ];
+     fhir:Questionnaire.item.type [ fhir:value "display" ]
+  ], [
+     fhir:index 1;
+     fhir:Questionnaire.item.linkId [ fhir:value "instructions" ];
+     fhir:Questionnaire.item.text [ fhir:value "Reporting instructions: Please report any allergy or allergic reaction" ];
+     fhir:Questionnaire.item.type [ fhir:value "display" ]
+  ], [
+     fhir:index 2;
+     fhir:Questionnaire.item.linkId [ fhir:value "patient" ];
+     fhir:Questionnaire.item.text [ fhir:value "Patient ID" ];
+     fhir:Questionnaire.item.type [ fhir:value "string" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 3;
+     fhir:Questionnaire.item.linkId [ fhir:value "allergen" ];
+     fhir:Questionnaire.item.text [ fhir:value "Substance that the person is allergic to" ];
+     fhir:Questionnaire.item.type [ fhir:value "open-choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-food-allergy-cont" ]
+  ], [
+     fhir:index 4;
+     fhir:Questionnaire.item.linkId [ fhir:value "clinicalStatus" ];
+     fhir:Questionnaire.item.text [ fhir:value "Status of the allergy - active or resolved" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-food-allergy-clinstatus-cont" ]
+  ], [
+     fhir:index 5;
+     fhir:Questionnaire.item.linkId [ fhir:value "verificationStatus" ];
+     fhir:Questionnaire.item.text [ fhir:value "Verification status of the allergy - confirmed or suspected or refuted" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-food-allergy-verifstatus-cont" ]
+  ], [
+     fhir:index 6;
+     fhir:Questionnaire.item.linkId [ fhir:value "recordedDate" ];
+     fhir:Questionnaire.item.text [ fhir:value "When was it reported" ];
+     fhir:Questionnaire.item.type [ fhir:value "date" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 7;
+     fhir:Questionnaire.item.linkId [ fhir:value "recorder" ];
+     fhir:Questionnaire.item.text [ fhir:value "Who recorded the allergy" ];
+     fhir:Questionnaire.item.type [ fhir:value "string" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 8;
+     fhir:Questionnaire.item.linkId [ fhir:value "asserter" ];
+     fhir:Questionnaire.item.text [ fhir:value "Who asserted the allergy" ];
+     fhir:Questionnaire.item.type [ fhir:value "string" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 9;
+     fhir:Questionnaire.item.linkId [ fhir:value "reactions" ];
+     fhir:Questionnaire.item.text [ fhir:value "Reactions" ];
+     fhir:Questionnaire.item.type [ fhir:value "group" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.item [
+       fhir:index 0;
+       fhir:Questionnaire.item.linkId [ fhir:value "substance" ];
+       fhir:Questionnaire.item.text [ fhir:value "Substance that is thought to have triggered the reaction" ];
+       fhir:Questionnaire.item.type [ fhir:value "string" ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Questionnaire.item.linkId [ fhir:value "manifestation" ];
+       fhir:Questionnaire.item.text [ fhir:value "Manifestation" ];
+       fhir:Questionnaire.item.type [ fhir:value "string" ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Questionnaire.item.linkId [ fhir:value "note" ];
+       fhir:Questionnaire.item.text [ fhir:value "Note" ];
+       fhir:Questionnaire.item.type [ fhir:value "string" ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

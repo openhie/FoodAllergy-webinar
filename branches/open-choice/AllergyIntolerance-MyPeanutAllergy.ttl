@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ohie.org/fhir/food-allergy/AllergyIntolerance/MyPeanutAllergy> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MyPeanutAllergy"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy";
+       fhir:index 0;
+       fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MyPeanutAllergy\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FoodAllergy.html\">Food Allergy</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Unconfirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-allergyintolerance-verification.html\">AllergyIntolerance Verification Status</a>#unconfirmed)</span></p><p><b>code</b>: Allergy to peanut <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#91935009)</span></p><p><b>patient</b>: <span>: Paul Peters</span></p><p><b>recordedDate</b>: 2021-07-28</p><p><b>recorder</b>: <span>: Daniel Davis</span></p><p><b>asserter</b>: <span>: Paul Peters</span></p></div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ];
+       fhir:Coding.code [ fhir:value "unconfirmed" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:91935009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "91935009" ];
+       fhir:Coding.display [ fhir:value "Allergy to peanut" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "8936584955" ]
+     ];
+     fhir:Reference.display [ fhir:value "Paul Peters" ]
+  ];
+  fhir:AllergyIntolerance.recordedDate [ fhir:value "2021-07-28"^^xsd:date];
+  fhir:AllergyIntolerance.recorder [
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "8936584955" ]
+     ];
+     fhir:Reference.display [ fhir:value "Daniel Davis" ]
+  ];
+  fhir:AllergyIntolerance.asserter [
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "8936584955" ]
+     ];
+     fhir:Reference.display [ fhir:value "Paul Peters" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ohie.org/fhir/food-allergy/AllergyIntolerance/MyPeanutAllergy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
