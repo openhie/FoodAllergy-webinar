@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Food Allergies ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-07-28T13:51:03+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-27T20:42:52+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "OpenHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -340,14 +340,14 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergy" ]
+         fhir:link <http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/food-allergy-questionnaire" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy profile" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy self-report" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A form for self-reported food allergies, including the basic information and contained valuesets" ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
@@ -364,6 +364,19 @@
          fhir:value "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy";
          fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>
        ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy profile" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

@@ -11,7 +11,7 @@
   "title": "Food Allergies ImplementationGuide",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-28T13:51:03+00:00",
+  "date": "2022-01-27T20:42:52+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -359,14 +359,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "Questionnaire"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/FoodAllergy"
+          "reference": "Questionnaire/food-allergy-questionnaire"
         },
-        "name": "Food Allergy",
-        "description": "Food Allergy profile"
+        "name": "Food Allergy self-report",
+        "description": "A form for self-reported food allergies, including the basic information and contained valuesets"
       },
       {
         "extension": [
@@ -380,6 +380,19 @@
         },
         "name": "Example AllergyIntolerance - MyPeanutAllergy",
         "exampleCanonical": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergy"
+        },
+        "name": "Food Allergy",
+        "description": "Food Allergy profile"
       }
     ],
     "page": {
