@@ -24,6 +24,13 @@
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -127,12 +134,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-
+    
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
-
+          
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -164,13 +171,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -200,6 +210,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+   <p>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-food-allergy-questionnaire.html"
+                     title="Questionnaire/food-allergy-questionnaire">Food Allergy self-report</a>
+               </td>
+               <td>
+<p>A form for self-reported food allergies, including the basic information and contained valuesets</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -220,7 +251,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -240,7 +271,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -283,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package ohie.fhir.food-allergy#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 28, 2021 13:51+0000">2021-07-28</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ohie.org">OpenHIE</a>.  Package ohie.fhir.food-allergy#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 27, 2022 20:42+0000">2022-01-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

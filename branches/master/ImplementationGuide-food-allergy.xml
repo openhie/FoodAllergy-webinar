@@ -12,7 +12,7 @@
   <title value="Food Allergies ImplementationGuide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-28T13:51:03+00:00"/>
+  <date value="2022-01-27T20:42:52+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -229,13 +229,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FoodAllergy"/>
+        <reference value="Questionnaire/food-allergy-questionnaire"/>
       </reference>
-      <name value="Food Allergy"/>
-      <description value="Food Allergy profile"/>
+      <name value="Food Allergy self-report"/>
+      <description value="A form for self-reported food allergies, including the basic information and contained valuesets"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -246,6 +246,16 @@
       </reference>
       <name value="Example AllergyIntolerance - MyPeanutAllergy"/>
       <exampleCanonical value="http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FoodAllergy"/>
+      </reference>
+      <name value="Food Allergy"/>
+      <description value="Food Allergy profile"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

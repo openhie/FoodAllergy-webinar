@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 1, warn = 3, info = 0 -->
+<!-- broken links = 19, errors = 3, warn = 3, info = 0 -->
 <head>
   <title>FoodAllergyIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
   </style>
   <script>
     function flip(id) {
@@ -19,35 +21,50 @@
         span.innerHTML = 'Show Reasoning';
       }
     }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for FoodAllergyIG</h1>
- <p>Generated Wed Jul 28 13:51:16 UTC 2021, FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = <a href="http://ohie.org/fhir/food-allergy">http://ohie.org/fhir/food-allergy</a> (<a href="http://ohie.org/fhir/food-allergy/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Jan 27 20:43:15 UTC 2022, FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = <a href="http://ohie.org/fhir/food-allergy">http://ohie.org/fhir/food-allergy</a> (<a href="http://ohie.org/fhir/food-allergy/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.97</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ohie.fhir.food-allergy, Canonical = http://ohie.org/fhir/food-allergy</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0-test: <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
  <tr><td>Supressed Messages:</td><td>No Suppressed Issues
 </td></tr>
  <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ohie.fhir.food-allergy</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0-test</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://ohie.org/fhir/food-allergy</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-</table><para>Templates: myorg.fhir.mytemplate#0.0.1 -&gt; openhie.fhir.template#0.1.0 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+</table><para>Templates: myorg.fhir.mytemplate#0.0.1 -&gt; openhie.fhir.template#0.1.0 -&gt; fhir.base.template#0.2.2</para></div></td></tr>
  <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
  <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ohie.org/fhir/food-allergy (Problem #1 with package-list.json at http://ohie.org/fhir/food-allergy: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 1, warn = 3, info = 0</td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ohie.org/fhir/food-allergy (Problem #1 with package-list.json at http://ohie.org/fhir/food-allergy: https://ohie.org/fhir/food-allergy/package-list.json?nocache=1643316170665)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 19, errors = 3, warn = 3, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>19</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_AllergyIntolerance-MyPeanutAllergy"><b>/github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-food-allergy-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-FoodAllergy"><b>/github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -64,7 +81,8 @@
 </table>
 <hr/>
 <a name="internal"> </a>
-<h2><a href="">n/a</a></h2>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide Resource id should be ohie.fhir.food-allergy</b></td>
@@ -72,22 +90,95 @@
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-food-allergy-questionnaire-form.html">output/Questionnaire-food-allergy-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 224 column 158</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#l262">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#l268">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#l274">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#l260">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#l266">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#l272">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#l262">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#l268">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#l274">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#l260">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#l266">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#l272">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#l262">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#l268">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#l274">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#l260">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#l266">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#l272">output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_AllergyIntolerance-MyPeanutAllergy"> </a>
-<h2><a href="AllergyIntolerance-MyPeanutAllergy.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json</a></h2>
- <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a> and <i>this.</i><a href="StructureDefinition-FoodAllergy.html">Food Allergy</a> (per meta)</li></ul>
-
+<h2><a href="AllergyIntolerance-MyPeanutAllergy.html">fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <i>this.</i><a href="StructureDefinition-FoodAllergy.html">Food Allergy</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-food-allergy-questionnaire"> </a>
+<h2><a href="Questionnaire-food-allergy-questionnaire.html">fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li><li>Questionnaire.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li><li>Questionnaire.contained[1]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li><li>Questionnaire.contained[2]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.where(url = 'http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json - the canonical URL (http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire) does not match the URL (http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated/resources/Questionnaire-food-allergy-questionnaire</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire vs http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-FoodAllergy"> </a>
-<h2><a href="StructureDefinition-FoodAllergy.html">/github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-FoodAllergy.html">fsh-generated/resources/StructureDefinition-FoodAllergy.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -95,9 +186,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-FoodAllergyModel"> </a>
-<h2><a href="StructureDefinition-FoodAllergyModel.html">/github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-FoodAllergyModel.html">fsh-generated/resources/StructureDefinition-FoodAllergyModel.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -111,9 +202,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-FoodAllergyVS"> </a>
-<h2><a href="ValueSet-FoodAllergyVS.html">/github/workspace/fsh-generated/resources/ValueSet-FoodAllergyVS.json</a></h2>
- <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-
+<h2><a href="ValueSet-FoodAllergyVS.html">fsh-generated/resources/ValueSet-FoodAllergyVS.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -121,7 +212,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_food-allergy"> </a>
-<h2><a href="ImplementationGuide-food-allergy.html">/github/workspace/input/food-allergy.xml</a></h2>
+<h2><a href="ImplementationGuide-food-allergy.html">input/food-allergy.xml</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"></div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -132,11 +224,19 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-food-allergy-questionnaire.html">fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json - the canonical URL (http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire) does not match the URL (http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire)</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
 <h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-FoodAllergyModel.html">/github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+     <td><a href="StructureDefinition-FoodAllergyModel.html">fsh-generated/resources/StructureDefinition-FoodAllergyModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
    </tr>
 </table>
 </body>
