@@ -8,7 +8,7 @@
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Display" class="hierarchy"/> title</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Food Allergy report</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="Display" class="hierarchy"/> instructions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reporting instructions: Please report any allergy or allergic reaction</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> patient</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient ID</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> allergen</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Substance that the person is allergic to</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-open-choice">open-choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html">FoodAllergyVS</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> allergen</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Substance that the person is allergic to</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html">FoodAllergyVS</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> clinicalStatus</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status of the allergy - active or resolved</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html">FoodAllergyVS</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> verificationStatus</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Verification status of the allergy - confirmed or suspected or refuted</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html">FoodAllergyVerificationStatusVS</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-date.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Date" class="hierarchy"/> recordedDate</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">When was it reported</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date">date</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
@@ -25,85 +25,64 @@
       <id value="vs-food-allergy-cont"/>
       <name value="FoodAllergyVS"/>
       <status value="active"/>
-      <compose>
-        <include>
+      <expansion>
+        <timestamp value="2022-01-27"/>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="91935009"/>
-            <display value="Allergy to peanut"/>
-          </concept>
-        </include>
-        <include>
+          <code value="91935009"/>
+          <display value="Allergy to peanut"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="48821000119104"/>
-            <display value="Allergy to tree nut"/>
-          </concept>
-        </include>
-        <include>
+          <code value="48821000119104"/>
+          <display value="Allergy to tree nut"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="782555009"/>
-            <display value="Allergy to cow’s milk protein"/>
-          </concept>
-        </include>
-        <include>
+          <code value="782555009"/>
+          <display value="Allergy to cow’s milk protein"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="213020009"/>
-            <display value="Allergy to egg protein"/>
-          </concept>
-        </include>
-        <include>
+          <code value="213020009"/>
+          <display value="Allergy to egg protein"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="417532002"/>
-            <display value="Allergy to fish"/>
-          </concept>
-        </include>
-        <include>
+          <code value="417532002"/>
+          <display value="Allergy to fish"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="300913006"/>
-            <display value="Allergy to shellfish"/>
-          </concept>
-        </include>
-        <include>
+          <code value="300913006"/>
+          <display value="Allergy to shellfish"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="782594005"/>
-            <display value="Allergy to soy protein"/>
-          </concept>
-        </include>
-        <include>
+          <code value="782594005"/>
+          <display value="Allergy to soy protein"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="260167008"/>
-            <display value="Sesame seed"/>
-          </concept>
-        </include>
-        <include>
+          <code value="260167008"/>
+          <display value="Sesame seed"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="21191000122102"/>
-            <display value="Allergy to mustard"/>
-          </concept>
-        </include>
-        <include>
+          <code value="21191000122102"/>
+          <display value="Allergy to mustard"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="712843002"/>
-            <display value="Allergy to celery"/>
-          </concept>
-        </include>
-        <include>
+          <code value="712843002"/>
+          <display value="Allergy to celery"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="782575000"/>
-            <display value="Allergy to lupine seed"/>
-          </concept>
-        </include>
-      </compose>
+          <code value="782575000"/>
+          <display value="Allergy to lupine seed"/>
+        </contains>
+      </expansion>
     </ValueSet>
   </contained>
   <contained>
@@ -111,22 +90,19 @@
       <id value="vs-food-allergy-verifstatus-cont"/>
       <name value="FoodAllergyVerificationStatusVS"/>
       <status value="active"/>
-      <compose>
-        <include>
+      <expansion>
+        <timestamp value="2022-01-27"/>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="410605003"/>
-            <display value="Confirmed present"/>
-          </concept>
-        </include>
-        <include>
+          <code value="410605003"/>
+          <display value="Confirmed present"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="415684004"/>
-            <display value="Suspected"/>
-          </concept>
-        </include>
-      </compose>
+          <code value="415684004"/>
+          <display value="Suspected"/>
+        </contains>
+      </expansion>
     </ValueSet>
   </contained>
   <contained>
@@ -134,22 +110,19 @@
       <id value="vs-food-allergy-clinstatus-cont"/>
       <name value="FoodAllergyVS"/>
       <status value="active"/>
-      <compose>
-        <include>
+      <expansion>
+        <timestamp value="2022-01-27"/>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="723506003"/>
-            <display value="Resolved"/>
-          </concept>
-        </include>
-        <include>
+          <code value="723506003"/>
+          <display value="Resolved"/>
+        </contains>
+        <contains>
           <system value="http://snomed.info/sct"/>
-          <concept>
-            <code value="55561003"/>
-            <display value="Active"/>
-          </concept>
-        </include>
-      </compose>
+          <code value="55561003"/>
+          <display value="Active"/>
+        </contains>
+      </expansion>
     </ValueSet>
   </contained>
   <url value="http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire"/>
@@ -158,7 +131,7 @@
   <title value="Food Allergy self-report"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2022-01-27T21:06:26+00:00"/>
+  <date value="2022-01-28T12:28:01+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -192,7 +165,7 @@
   <item>
     <linkId value="allergen"/>
     <text value="Substance that the person is allergic to"/>
-    <type value="open-choice"/>
+    <type value="choice"/>
     <repeats value="false"/>
     <answerValueSet value="#vs-food-allergy-cont"/>
   </item>

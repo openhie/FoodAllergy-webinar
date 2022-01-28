@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7ea358c9-44b0-4325-b2a3-8357770d3a09"/>
+  <id value="a218bd1e-c711-48d9-b468-2b14f7862803"/>
   <meta>
-    <lastUpdated value="2022-01-27T21:06:26.541+00:00"/>
+    <lastUpdated value="2022-01-28T12:28:01.207+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -115,7 +115,7 @@
         <name value="FoodAllergyVS"/>
         <title value="Food Allergies"/>
         <status value="active"/>
-        <date value="2022-01-27T21:06:26+00:00"/>
+        <date value="2022-01-28T12:28:01+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -131,8 +131,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3f7208bb-cb68-45ff-a3ee-adc050b796aa"/>
-          <timestamp value="2022-01-27T21:06:39+00:00"/>
+          <identifier value="urn:uuid:af082d43-5c5c-410f-aa13-139c7f61edff"/>
+          <timestamp value="2022-01-28T12:28:13+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -214,7 +214,6 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 11 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -314,25 +313,7 @@
         <name value="FoodAllergyVS"/>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:02ac1bfd-6460-4573-991a-1ce51ee6b776"/>
-          <timestamp value="2022-01-27T21:06:43+00:00"/>
-          <total value="11"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
+          <timestamp value="2022-01-27"/>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="91935009"/>
@@ -401,7 +382,6 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -438,25 +418,7 @@
         <name value="FoodAllergyVerificationStatusVS"/>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:043d3c1f-a5f8-4e44-994c-d670ff80518b"/>
-          <timestamp value="2022-01-27T21:06:43+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
+          <timestamp value="2022-01-27"/>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="410605003"/>
@@ -480,7 +442,6 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -517,25 +478,7 @@
         <name value="FoodAllergyVS"/>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:fbccd50c-44ab-4a42-869f-20f46b72b177"/>
-          <timestamp value="2022-01-27T21:06:43+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
+          <timestamp value="2022-01-27"/>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="723506003"/>
