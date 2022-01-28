@@ -19,95 +19,63 @@
      fhir:Resource.id [ fhir:value "vs-food-allergy-cont" ];
      fhir:ValueSet.name [ fhir:value "FoodAllergyVS" ];
      fhir:ValueSet.status [ fhir:value "active" ];
-     fhir:ValueSet.compose [
-       fhir:ValueSet.compose.include [
+     fhir:ValueSet.expansion [
+       fhir:ValueSet.expansion.timestamp [ fhir:value "2022-01-27"^^xsd:date ];
+       fhir:ValueSet.expansion.contains [
          fhir:index 0;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "91935009" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to peanut" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "91935009" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to peanut" ]
        ], [
          fhir:index 1;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "48821000119104" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to tree nut" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "48821000119104" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to tree nut" ]
        ], [
          fhir:index 2;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "782555009" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to cow’s milk protein" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "782555009" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to cow’s milk protein" ]
        ], [
          fhir:index 3;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "213020009" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to egg protein" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "213020009" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to egg protein" ]
        ], [
          fhir:index 4;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "417532002" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to fish" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "417532002" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to fish" ]
        ], [
          fhir:index 5;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "300913006" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to shellfish" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "300913006" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to shellfish" ]
        ], [
          fhir:index 6;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "782594005" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to soy protein" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "782594005" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to soy protein" ]
        ], [
          fhir:index 7;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "260167008" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Sesame seed" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "260167008" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Sesame seed" ]
        ], [
          fhir:index 8;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "21191000122102" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to mustard" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "21191000122102" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to mustard" ]
        ], [
          fhir:index 9;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "712843002" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to celery" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "712843002" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to celery" ]
        ], [
          fhir:index 10;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "782575000" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy to lupine seed" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "782575000" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Allergy to lupine seed" ]
        ]
      ]
   ], [
@@ -116,23 +84,18 @@
      fhir:Resource.id [ fhir:value "vs-food-allergy-verifstatus-cont" ];
      fhir:ValueSet.name [ fhir:value "FoodAllergyVerificationStatusVS" ];
      fhir:ValueSet.status [ fhir:value "active" ];
-     fhir:ValueSet.compose [
-       fhir:ValueSet.compose.include [
+     fhir:ValueSet.expansion [
+       fhir:ValueSet.expansion.timestamp [ fhir:value "2022-01-27"^^xsd:date ];
+       fhir:ValueSet.expansion.contains [
          fhir:index 0;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "410605003" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Confirmed present" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "410605003" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Confirmed present" ]
        ], [
          fhir:index 1;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "415684004" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspected" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "415684004" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Suspected" ]
        ]
      ]
   ], [
@@ -141,23 +104,18 @@
      fhir:Resource.id [ fhir:value "vs-food-allergy-clinstatus-cont" ];
      fhir:ValueSet.name [ fhir:value "FoodAllergyVS" ];
      fhir:ValueSet.status [ fhir:value "active" ];
-     fhir:ValueSet.compose [
-       fhir:ValueSet.compose.include [
+     fhir:ValueSet.expansion [
+       fhir:ValueSet.expansion.timestamp [ fhir:value "2022-01-27"^^xsd:date ];
+       fhir:ValueSet.expansion.contains [
          fhir:index 0;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "723506003" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Resolved" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "723506003" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Resolved" ]
        ], [
          fhir:index 1;
-         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:ValueSet.compose.include.concept [
-           fhir:index 0;
-           fhir:ValueSet.compose.include.concept.code [ fhir:value "55561003" ];
-           fhir:ValueSet.compose.include.concept.display [ fhir:value "Active" ]
-         ]
+         fhir:ValueSet.expansion.contains.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.expansion.contains.code [ fhir:value "55561003" ];
+         fhir:ValueSet.expansion.contains.display [ fhir:value "Active" ]
        ]
      ]
   ];
@@ -170,7 +128,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2022-01-27T21:05:29+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2022-01-28T12:28:01+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "OpenHIE"];
   fhir:Questionnaire.contact [
      fhir:index 0;

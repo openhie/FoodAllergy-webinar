@@ -3,7 +3,7 @@
 
 err = 3, warn = 3, info = 0
 IG Publisher Version: 1.1.97
-Generated Thu Jan 27 21:05:49 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
+Generated Fri Jan 28 12:28:20 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
  Build Errors : 19 / 2 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 2 / 0 / 4

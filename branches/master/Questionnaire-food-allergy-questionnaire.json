@@ -12,106 +12,63 @@
       "id": "vs-food-allergy-cont",
       "name": "FoodAllergyVS",
       "status": "active",
-      "compose": {
-        "include": [
+      "expansion": {
+        "timestamp": "2022-01-27",
+        "contains": [
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "91935009",
-                "display": "Allergy to peanut"
-              }
-            ]
+            "code": "91935009",
+            "display": "Allergy to peanut"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "48821000119104",
-                "display": "Allergy to tree nut"
-              }
-            ]
+            "code": "48821000119104",
+            "display": "Allergy to tree nut"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "782555009",
-                "display": "Allergy to cow’s milk protein"
-              }
-            ]
+            "code": "782555009",
+            "display": "Allergy to cow’s milk protein"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "213020009",
-                "display": "Allergy to egg protein"
-              }
-            ]
+            "code": "213020009",
+            "display": "Allergy to egg protein"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "417532002",
-                "display": "Allergy to fish"
-              }
-            ]
+            "code": "417532002",
+            "display": "Allergy to fish"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "300913006",
-                "display": "Allergy to shellfish"
-              }
-            ]
+            "code": "300913006",
+            "display": "Allergy to shellfish"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "782594005",
-                "display": "Allergy to soy protein"
-              }
-            ]
+            "code": "782594005",
+            "display": "Allergy to soy protein"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "260167008",
-                "display": "Sesame seed"
-              }
-            ]
+            "code": "260167008",
+            "display": "Sesame seed"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "21191000122102",
-                "display": "Allergy to mustard"
-              }
-            ]
+            "code": "21191000122102",
+            "display": "Allergy to mustard"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "712843002",
-                "display": "Allergy to celery"
-              }
-            ]
+            "code": "712843002",
+            "display": "Allergy to celery"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "782575000",
-                "display": "Allergy to lupine seed"
-              }
-            ]
+            "code": "782575000",
+            "display": "Allergy to lupine seed"
           }
         ]
       }
@@ -121,25 +78,18 @@
       "id": "vs-food-allergy-verifstatus-cont",
       "name": "FoodAllergyVerificationStatusVS",
       "status": "active",
-      "compose": {
-        "include": [
+      "expansion": {
+        "timestamp": "2022-01-27",
+        "contains": [
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "410605003",
-                "display": "Confirmed present"
-              }
-            ]
+            "code": "410605003",
+            "display": "Confirmed present"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "415684004",
-                "display": "Suspected"
-              }
-            ]
+            "code": "415684004",
+            "display": "Suspected"
           }
         ]
       }
@@ -149,25 +99,18 @@
       "id": "vs-food-allergy-clinstatus-cont",
       "name": "FoodAllergyVS",
       "status": "active",
-      "compose": {
-        "include": [
+      "expansion": {
+        "timestamp": "2022-01-27",
+        "contains": [
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "723506003",
-                "display": "Resolved"
-              }
-            ]
+            "code": "723506003",
+            "display": "Resolved"
           },
           {
             "system": "http://snomed.info/sct",
-            "concept": [
-              {
-                "code": "55561003",
-                "display": "Active"
-              }
-            ]
+            "code": "55561003",
+            "display": "Active"
           }
         ]
       }
@@ -181,7 +124,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2022-01-27T21:05:29+00:00",
+  "date": "2022-01-28T12:28:01+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
