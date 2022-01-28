@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a218bd1e-c711-48d9-b468-2b14f7862803",
+  "id" : "b66195d3-71dc-4677-bb36-e3fcf35987d4",
   "meta" : {
-    "lastUpdated" : "2022-01-28T12:28:01.207+00:00"
+    "lastUpdated" : "2022-01-28T16:31:06.787+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "FoodAllergyVS",
       "title" : "Food Allergies",
       "status" : "active",
-      "date" : "2022-01-28T12:28:01+00:00",
+      "date" : "2022-01-28T16:31:06+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:af082d43-5c5c-410f-aa13-139c7f61edff",
-        "timestamp" : "2022-01-28T12:28:13+00:00",
+        "identifier" : "urn:uuid:07aeff5c-d2ef-40f2-9bcc-2b1ca592003b",
+        "timestamp" : "2022-01-28T16:31:17+00:00",
         "total" : 11,
         "parameter" : [{
           "name" : "excludeNested",
