@@ -8,9 +8,9 @@ RuleSet: Question(context, linkId, text, type, repeats)
 
 
 RuleSet: VSCodeDef(system,code,display)
-* compose.include[+].system = {system} 
-* compose.include[=].concept[+].code = #{code}
-* compose.include[=].concept[=].display = "{display}"
+* expansion.contains[+].system = {system} 
+* expansion.contains[=].code = #{code}
+* expansion.contains[=].display = "{display}"
 
 
 
@@ -22,6 +22,7 @@ Usage: #inline
 * name = "FoodAllergyVS"
 * id = "vs-food-allergy-cont"
 * status = #active
+* expansion.timestamp = "2022-01-27"
 * insert VSCodeDef($SCT,91935009,Allergy to peanut)
 * insert VSCodeDef($SCT,48821000119104,Allergy to tree nut)
 * insert VSCodeDef($SCT,782555009,Allergy to cow’s milk protein)
@@ -43,6 +44,7 @@ Usage: #inline
 * name = "FoodAllergyVerificationStatusVS"
 * id = "vs-food-allergy-verifstatus-cont"
 * status = #active
+* expansion.timestamp = "2022-01-27"
 * insert VSCodeDef($SCT,410605003,Confirmed present)
 * insert VSCodeDef($SCT,415684004,Suspected)
 
@@ -55,6 +57,7 @@ Usage: #inline
 * name = "FoodAllergyVS"
 * id = "vs-food-allergy-clinstatus-cont"
 * status = #active
+* expansion.timestamp = "2022-01-27"
 * insert VSCodeDef($SCT,723506003,Resolved)
 * insert VSCodeDef($SCT,55561003,Active)
 
