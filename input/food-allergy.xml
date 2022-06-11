@@ -7,7 +7,7 @@
   </extension>-->
   <url value="http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.1.0-test"/>
+  <version value="0.1.0"/>
   <name value="FoodAllergyIG"/>
   <title value="Food Allergies ImplementationGuide"/>
   <status value="draft"/>
