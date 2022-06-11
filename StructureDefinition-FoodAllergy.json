@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy",
-  "version": "0.1.0-test",
+  "version": "0.1.0",
   "name": "FoodAllergy",
   "title": "Food Allergy",
   "status": "active",
-  "date": "2022-01-28T16:31:06+00:00",
+  "date": "2022-06-11T23:04:00+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {

@@ -1,6 +1,6 @@
 {
   "package": "ohie.fhir.food-allergy",
-  "version": "0.1.0-test",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [],

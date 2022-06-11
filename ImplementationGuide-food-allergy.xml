@@ -7,12 +7,12 @@
 </div></div>
   </text>
   <url value="http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy"/>
-  <version value="0.1.0-test"/>
+  <version value="0.1.0"/>
   <name value="FoodAllergyIG"/>
   <title value="Food Allergies ImplementationGuide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-01-28T16:31:06+00:00"/>
+  <date value="2022-06-11T23:04:00+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -30,6 +30,11 @@
   <packageId value="ohie.fhir.food-allergy"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -207,16 +212,30 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
       </extension>
-      <reference>
-        <reference value="StructureDefinition/FoodAllergyModel"/>
-      </reference>
-      <name value="Food Allergy Logical Model"/>
-      <description value="Food Allergy information model"/>
-    </resource>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
@@ -226,6 +245,16 @@
       </reference>
       <name value="Food Allergies"/>
       <description value="Main Food allergies."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FoodAllergy"/>
+      </reference>
+      <name value="Food Allergy"/>
+      <description value="Food Allergy profile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -249,13 +278,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FoodAllergy"/>
+        <reference value="StructureDefinition/FoodAllergyModel"/>
       </reference>
-      <name value="Food Allergy"/>
-      <description value="Food Allergy profile"/>
+      <name value="Food Allergy Logical Model"/>
+      <description value="Food Allergy information model"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
