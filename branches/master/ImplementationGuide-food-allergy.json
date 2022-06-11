@@ -6,12 +6,12 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FoodAllergyIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy</pre><div><p>This IG shows all about allergies</p>\n</div></div>"
   },
   "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy",
-  "version": "0.1.0-test",
+  "version": "0.1.0",
   "name": "FoodAllergyIG",
   "title": "Food Allergies ImplementationGuide",
   "status": "draft",
   "experimental": false,
-  "date": "2022-01-28T16:31:06+00:00",
+  "date": "2022-06-11T23:04:00+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -38,6 +38,14 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7tx",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId": "hl7.terminology.r4",
+      "version": "3.1.0"
+    }
   ],
   "definition": {
     "extension": [
@@ -326,22 +334,48 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      }
-    ],
-    "resource": [
+      },
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
           }
         ],
-        "reference": {
-          "reference": "StructureDefinition/FoodAllergyModel"
-        },
-        "name": "Food Allergy Logical Model",
-        "description": "Food Allergy information model"
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
       {
         "extension": [
           {
@@ -354,6 +388,19 @@
         },
         "name": "Food Allergies",
         "description": "Main Food allergies."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergy"
+        },
+        "name": "Food Allergy",
+        "description": "Food Allergy profile"
       },
       {
         "extension": [
@@ -385,14 +432,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "StructureDefinition:logical"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/FoodAllergy"
+          "reference": "StructureDefinition/FoodAllergyModel"
         },
-        "name": "Food Allergy",
-        "description": "Food Allergy profile"
+        "name": "Food Allergy Logical Model",
+        "description": "Food Allergy information model"
       }
     ],
     "page": {

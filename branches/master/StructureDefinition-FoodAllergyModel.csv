@@ -1,26 +1,26 @@
-"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"FoodAllergyModel","","","",0,*,"","","","","Food Allergy Logical Model","Food Allergy information model","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"FoodAllergyModel.patient","","","",1,1,"","","","Reference {[]} {[]}
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"FoodAllergyModel","FoodAllergyModel","","","",0,*,"","","","","Food Allergy Logical Model","Food Allergy information model","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"FoodAllergyModel.patient","FoodAllergyModel.patient","","","",1,1,"","","","Reference {[]} {[]}
 ","The person that has the allergy","The person that has the allergy","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.patient",1,1,"",""
-"FoodAllergyModel.allergen","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"FoodAllergyModel.allergen","FoodAllergyModel.allergen","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","The substance that the person is allergic to","The substance - from a list of substances - that the person is allergic to. It is possible to use free text but for the products indicated, a code must be used","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.allergen",1,1,"",""
-"FoodAllergyModel.clinicalStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"FoodAllergyModel.clinicalStatus","FoodAllergyModel.clinicalStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","The status of the allergy - if it is active or resolved","The status of the allergy - if it is active or resolved","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.clinicalStatus",1,1,"",""
-"FoodAllergyModel.verificationStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"FoodAllergyModel.verificationStatus","FoodAllergyModel.verificationStatus","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","The verification status of the allergy - if it is confirmed or suspected or refuted","The verification status of the allergy - if it is confirmed or suspected or refuted","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.verificationStatus",1,1,"",""
-"FoodAllergyModel.recordedDate","","","",0,1,"","","","dateTime {[]} {[]}
+"FoodAllergyModel.recordedDate","FoodAllergyModel.recordedDate","","","",0,1,"","","","dateTime {[]} {[]}
 ","When the allergy was reported","When the allergy was reported","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.recordedDate",0,1,"",""
-"FoodAllergyModel.recorder","","","",0,1,"","","","Reference {[]} {[]}
+"FoodAllergyModel.recorder","FoodAllergyModel.recorder","","","",0,1,"","","","Reference {[]} {[]}
 ","Who recorded the allergy","Who recorded the allergy","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.recorder",0,1,"",""
-"FoodAllergyModel.asserter","","","",0,1,"","","","Reference {[]} {[]}
+"FoodAllergyModel.asserter","FoodAllergyModel.asserter","","","",0,1,"","","","Reference {[]} {[]}
 ","Who asserted the allergy"," who asserted or provided the allergy information e.g. the patient, a relative, a care giver...","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.asserter",0,1,"",""
-"FoodAllergyModel.reactions","","","",0,1,"","","","BackboneElement {[]} {[]}
+"FoodAllergyModel.reactions","FoodAllergyModel.reactions","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","known past reactions to the allergen","known past reactions to the allergen","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.reactions",0,1,"",""
-"FoodAllergyModel.reactions.manifestation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"FoodAllergyModel.reactions.manifestation","FoodAllergyModel.reactions.manifestation","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","How the reaction manifested itself","How the reaction manifested itself, e.g. rash, breathing difficulty...","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.reactions.manifestation",0,1,"",""
-"FoodAllergyModel.reactions.certitude","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"FoodAllergyModel.reactions.certitude","FoodAllergyModel.reactions.certitude","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","How certain we are that the cause of the reaction was the allergen indicated","How certain we are that the cause of the reaction was the allergen indicated","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.reactions.certitude",0,1,"",""
-"FoodAllergyModel.reactions.exposure","","","",0,1,"","","","CodeableConcept {[]} {[]}
+"FoodAllergyModel.reactions.exposure","FoodAllergyModel.reactions.exposure","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The exposure route to the substance","The exposure route to the substance","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.reactions.exposure",0,1,"",""
-"FoodAllergyModel.reactions.note","","","",0,1,"","","","string {[]} {[]}
+"FoodAllergyModel.reactions.note","FoodAllergyModel.reactions.note","","","",0,1,"","","","string {[]} {[]}
 ","Additional text note about the allergic reaction","Additional text note about the allergic reaction","","","","","","","","","",,,,,"",,,,"FoodAllergyModel.reactions.note",0,1,"",""

@@ -2,9 +2,9 @@
 =========================================
 
 err = 3, warn = 3, info = 0
-IG Publisher Version: 1.1.97
-Generated Fri Jan 28 16:31:23 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0-test (canonical = http://ohie.org/fhir/food-allergy)
- Build Errors : 19 / 2 / 0
+IG Publisher Version: 1.1.121
+Generated Sat Jun 11 23:04:20 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-allergy#0.1.0 (canonical = http://ohie.org/fhir/food-allergy)
+ Build Errors : 1 / 2 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire : 2 / 0 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergy : 0 / 0 / 1
@@ -15,25 +15,7 @@ Generated Fri Jan 28 16:31:23 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-al
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be ohie.fhir.food-allergy
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/MyPeanutAllergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-food-allergy-questionnaire-form.html: unexpected non-end of element null::div  at line 224 column 158
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 183, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.ttl.html' for "TTL" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-clinstatus-cont.ttl.html' for "TTL" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 183, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.ttl.html' for "TTL" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-cont.ttl.html' for "TTL" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 183, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.ttl.html' for "TTL" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 171, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 8: The link 'ValueSet-food-allergy-questionnaire_vs-food-allergy-verifstatus-cont.ttl.html' for "TTL" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-food-allergy-questionnaire-form.html: Unable to read attribute on <div> at line 215 column 71
 == fsh-generated/resources/AllergyIntolerance-MyPeanutAllergy.json ==
 == fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json ==
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-food-allergy-questionnaire.json - the canonical URL (http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire) does not match the URL (http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire)

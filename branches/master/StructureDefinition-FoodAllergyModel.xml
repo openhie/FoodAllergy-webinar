@@ -19,11 +19,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergyModel"/>
-  <version value="0.1.0-test"/>
+  <version value="0.1.0"/>
   <name value="FoodAllergyModel"/>
   <title value="Food Allergy Logical Model"/>
   <status value="active"/>
-  <date value="2022-01-28T16:31:06+00:00"/>
+  <date value="2022-06-11T23:04:00+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>

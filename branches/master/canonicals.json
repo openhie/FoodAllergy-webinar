@@ -3,35 +3,35 @@
     "id": "food-allergy",
     "type": "ImplementationGuide",
     "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy",
-    "version": "0.1.0-test",
+    "version": "0.1.0",
     "name": "FoodAllergyIG"
   },
   {
     "id": "FoodAllergy",
     "type": "StructureDefinition",
     "url": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy",
-    "version": "0.1.0-test",
+    "version": "0.1.0",
     "name": "FoodAllergy"
   },
   {
     "id": "FoodAllergyModel",
     "type": "StructureDefinition",
     "url": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergyModel",
-    "version": "0.1.0-test",
+    "version": "0.1.0",
     "name": "FoodAllergyModel"
   },
   {
     "id": "FoodAllergyVS",
     "type": "ValueSet",
     "url": "http://ohie.org/fhir/food-allergy/ValueSet/FoodAllergyVS",
-    "version": "0.1.0-test",
+    "version": "0.1.0",
     "name": "FoodAllergyVS"
   },
   {
     "id": "food-allergy-questionnaire",
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire",
-    "version": "0.1.0-test",
+    "version": "0.1.0",
     "name": "FoodAllergyQuestionnaire"
   }
 ]

@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FoodAllergyIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy</pre><div><p>This IG shows all about allergies</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.0-test"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "FoodAllergyIG"];
   fhir:ImplementationGuide.title [ fhir:value "Food Allergies ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-28T16:31:06+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-11T23:04:00+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "OpenHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -42,6 +42,16 @@
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -308,22 +318,45 @@
          fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergyModel>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergyModel" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy Logical Model" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy information model" ]
-     ], [
-       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -335,6 +368,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergies" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Main Food allergies." ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy profile" ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
@@ -369,14 +415,14 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergy" ]
+         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergyModel>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergyModel" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy profile" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy Logical Model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy information model" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

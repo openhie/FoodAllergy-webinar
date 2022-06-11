@@ -1,6 +1,8 @@
 {
-  "version": "0.1.0-test",
-  "fhirVersion": "[4.0.1]",
-  "date": "20220128163033",
+  "version": "0.1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220611230337",
   "name": "ohie.fhir.food-allergy"
 }
