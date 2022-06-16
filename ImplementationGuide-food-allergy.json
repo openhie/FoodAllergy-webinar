@@ -11,7 +11,7 @@
   "title": "Food Allergies ImplementationGuide",
   "status": "draft",
   "experimental": false,
-  "date": "2022-06-11T23:04:00+00:00",
+  "date": "2022-06-16T12:32:08+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -380,6 +380,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/MyPeanutAllergy"
+        },
+        "name": "Example AllergyIntolerance - MyPeanutAllergy",
+        "exampleCanonical": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -406,32 +419,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
-          }
-        ],
-        "reference": {
-          "reference": "Questionnaire/food-allergy-questionnaire"
-        },
-        "name": "Food Allergy self-report",
-        "description": "A form for self-reported food allergies, including the basic information and contained valuesets"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "AllergyIntolerance"
-          }
-        ],
-        "reference": {
-          "reference": "AllergyIntolerance/MyPeanutAllergy"
-        },
-        "name": "Example AllergyIntolerance - MyPeanutAllergy",
-        "exampleCanonical": "http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -440,6 +427,19 @@
         },
         "name": "Food Allergy Logical Model",
         "description": "Food Allergy information model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/food-allergy-questionnaire"
+        },
+        "name": "Food Allergy self-report",
+        "description": "A form for self-reported food allergies, including the basic information and contained valuesets"
       }
     ],
     "page": {
