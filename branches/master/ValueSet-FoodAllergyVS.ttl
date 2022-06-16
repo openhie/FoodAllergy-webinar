@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "FoodAllergyVS"];
   fhir:ValueSet.title [ fhir:value "Food Allergies"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-06-11T23:04:00+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-06-16T12:32:08+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;

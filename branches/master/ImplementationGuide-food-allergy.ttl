@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Food Allergies ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-11T23:04:00+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-16T12:32:08+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "OpenHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -360,45 +360,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ohie.org/fhir/food-allergy/ValueSet/FoodAllergyVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/FoodAllergyVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergies" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Main Food allergies." ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergy" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy profile" ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire>;
-         fhir:Reference.reference [ fhir:value "Questionnaire/food-allergy-questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy self-report" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A form for self-reported food allergies, including the basic information and contained valuesets" ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -411,7 +372,33 @@
          fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>
        ]
      ], [
-       fhir:index 4;
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ohie.org/fhir/food-allergy/ValueSet/FoodAllergyVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/FoodAllergyVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergies" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Main Food allergies." ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FoodAllergy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy profile" ]
+     ], [
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -423,6 +410,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy Logical Model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Food Allergy information model" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ohie.org/fhir/food-allergy/Questionnaire/food-allergy-questionnaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/food-allergy-questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Food Allergy self-report" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A form for self-reported food allergies, including the basic information and contained valuesets" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

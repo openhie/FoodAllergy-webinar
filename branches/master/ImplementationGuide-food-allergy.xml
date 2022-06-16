@@ -12,7 +12,7 @@
   <title value="Food Allergies ImplementationGuide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-06-11T23:04:00+00:00"/>
+  <date value="2022-06-16T12:32:08+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -238,6 +238,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/MyPeanutAllergy"/>
+      </reference>
+      <name value="Example AllergyIntolerance - MyPeanutAllergy"/>
+      <exampleCanonical value="http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -258,26 +268,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/food-allergy-questionnaire"/>
-      </reference>
-      <name value="Food Allergy self-report"/>
-      <description value="A form for self-reported food allergies, including the basic information and contained valuesets"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/MyPeanutAllergy"/>
-      </reference>
-      <name value="Example AllergyIntolerance - MyPeanutAllergy"/>
-      <exampleCanonical value="http://ohie.org/fhir/food-allergy/StructureDefinition/FoodAllergy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -285,6 +275,16 @@
       </reference>
       <name value="Food Allergy Logical Model"/>
       <description value="Food Allergy information model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/food-allergy-questionnaire"/>
+      </reference>
+      <name value="Food Allergy self-report"/>
+      <description value="A form for self-reported food allergies, including the basic information and contained valuesets"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
