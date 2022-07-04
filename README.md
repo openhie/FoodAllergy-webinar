@@ -6,7 +6,7 @@ This is a Food Allergy IG
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __https://openhie.github.io/FoodAllergy-webinar/branches/main/index.html__  
+Continuous Build: __https://openhie.github.io/FoodAllergy-webinar/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
